@@ -85,17 +85,14 @@ Escribe en la característica LED para encender/apagar el LED físico. El cambio
 Documentación adicional
 El informe completo de la práctica (en PDF) se encuentra en la carpeta informe/ y se puede descargar mediante el siguiente enlace:
 
-🔗 Informe Técnico - Práctica 3C
+Informe Técnico - Práctica 3C
+https://drive.google.com/file/d/1MBUa9yCknYbmETSh_w0yO2X_wPBkDBhw/view?usp=drive_link
 
 Este documento incluye:
 
 Descripción detallada del código.
 
 Análisis de resultados con capturas de pantalla.
-
-Reflexión sobre el uso de la IA durante el desarrollo.
-
-Conclusiones.
 
 Reflexión sobre el uso de la IA durante el desarrollo.
 
