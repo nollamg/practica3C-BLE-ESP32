@@ -2,7 +2,7 @@
 
 Este repositorio contiene el código fuente y la documentación de la práctica 3C de la asignatura **Microprocesadores** (UPC). Se desarrolla un servidor BLE sobre una placa ESP32-S3 que expone tres características: lectura del valor analógico de un potenciómetro (ADC), control de un LED mediante escritura y envío periódico del estado completo en formato JSON.
 
-## ✨ Características
+## Características
 
 - **Servicio BLE** con UUID fijo: `4fafc201-1fb5-459e-8fcc-c5c9c331914b`
 - **Característica de lectura (ADC)**: lee el valor del pin GPIO4 (0-4095) y envía notificaciones cada 1 segundo mediante un temporizador hardware (sin polling).
@@ -10,7 +10,7 @@ Este repositorio contiene el código fuente y la documentación de la práctica 
 - **Característica JSON**: devuelve un objeto JSON con los campos `adc`, `led` y `uptime` (tiempo de ejecución en segundos). También admite notificaciones.
 - **Mensajes de depuración** por monitor serie: conexión/desconexión de clientes, valores ADC, comandos recibidos y confirmación del estado del LED.
 
-## 🧰 Requisitos
+## Requisitos
 
 ### Hardware
 - Placa ESP32-S3 (ej. ESP32-S3-DevKitC-1)
@@ -25,7 +25,7 @@ Este repositorio contiene el código fuente y la documentación de la práctica 
   - `ArduinoJson` (instalar desde el gestor de librerías)
 - **Aplicación móvil** para pruebas: [nRF Connect](https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-mobile) (Android/iOS)
 
-## 🔌 Conexiones de hardware
+## Conexiones de hardware
 
 | Componente          | Pin ESP32-S3 |
 |---------------------|--------------|
@@ -36,7 +36,7 @@ Este repositorio contiene el código fuente y la documentación de la práctica 
 
 *Nota:* Si tu placa utiliza otro pin para el LED integrado (por ejemplo GPIO2, GPIO15 o GPIO48), cambia la definición `LED_PIN` en el código.
 
-## ⚙️ Instalación y carga
+## Instalación y carga
 
 ### 1. Clonar el repositorio
 ```bash
@@ -65,7 +65,7 @@ Arduino IDE: pulsa el botón Upload.
 
 PlatformIO: pio run --target upload y después pio device monitor para ver la salida serie.
 
-📱 Uso con nRF Connect
+Uso con nRF Connect
 Abre la aplicación nRF Connect en tu dispositivo móvil.
 
 Escanea y conéctate al dispositivo ESP32_BLE_Server.
@@ -82,7 +82,7 @@ Activa las notificaciones (NOTIFY) en las características ADC y JSON. A partir 
 
 Escribe en la característica LED para encender/apagar el LED físico. El cambio se reflejará inmediatamente en la característica JSON.
 
-📄 Documentación adicional
+Documentación adicional
 El informe completo de la práctica (en PDF) se encuentra en la carpeta informe/ y se puede descargar mediante el siguiente enlace:
 
 🔗 Informe Técnico - Práctica 3C
@@ -92,6 +92,10 @@ Este documento incluye:
 Descripción detallada del código.
 
 Análisis de resultados con capturas de pantalla.
+
+Reflexión sobre el uso de la IA durante el desarrollo.
+
+Conclusiones.
 
 Reflexión sobre el uso de la IA durante el desarrollo.
 
